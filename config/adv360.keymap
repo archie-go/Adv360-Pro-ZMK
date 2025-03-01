@@ -27,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4      &kp N5  &tog 1                                                     &mo 3      &kp N6  &kp N7      &kp N8       &kp N9      &kp N0       &kp ASTRK
-&kp BSLH   &kp SQT        &kp COMMA   &kp PERIOD   &kp P       &kp Y   &none                                                      &none      &kp F   &kp G       &kp C        &kp R       &kp L        &kp FSLH
-&kp TAB    &hm LCTRL A    &hm LALT O  &hm LSHFT E  &hm LGUI U  &kp I   &none       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &hm RGUI H  &hm RSHFT T  &hm RALT N  &hm RCTRL S  &kp MINUS
-&kp GRAVE  &kp SEMICOLON  &kp Q       &kp J        &kp K       &kp X                          &kp HOME      &kp PG_UP                        &kp B   &kp M       &kp W        &kp V       &kp Z        &kp EQUAL
-&mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT           &lt 4 BSPC  &kp ESC    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP      &kp DOWN     &kp LBKT    &kp RBKT     &mo 2
+&kp EQUAL  &kp N1         &kp N2      &kp N3       &kp N4      &kp N5  &tog 1                                                     &mo 3        &kp N6  &kp N7      &kp N8       &kp N9      &kp N0       &kp ASTRK
+&kp BSLH   &kp SQT        &kp COMMA   &kp PERIOD   &kp P       &kp Y   &none                                                      &none        &kp F   &kp G       &kp C        &kp R       &kp L        &kp FSLH
+&kp TAB    &hm LCTRL A    &hm LALT O  &hm LSHFT E  &hm LGUI U  &kp I   &none       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none        &kp D   &hm RGUI H  &hm RSHFT T  &hm RALT N  &hm RCTRL S  &kp MINUS
+&kp GRAVE  &kp SEMICOLON  &kp Q       &kp J        &kp K       &kp X                          &kp HOME      &kp PG_UP                          &kp B   &kp M       &kp W        &kp V       &kp Z        &kp EQUAL
+&mo 2      &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT           &lt 4 BSPC  &kp ESC    &kp END       &kp PG_DN  &kp ENTER  &lt 5 SPACE          &kp UP      &kp DOWN     &kp LBKT    &kp RBKT     &mo 2
             >;
         };
 
@@ -79,6 +79,17 @@
             >;
         };
 
+        hyp {
+            display-name = "Hyper";
+            bindings = <
+&kp F1  &kp F2     &kp F3                 &kp F4                 &kp F5                 &kp F6                 &tog 1                                      &mo 3   &kp F7                 &kp F8                 &kp F9                 &kp F10                &kp F11                &kp F12
+&trans  &trans     &trans                 &trans                 &kp LS(LA(LC(LG(P))))  &kp LS(LA(LC(LG(Y))))  &none                                       &none   &kp LS(LC(LA(LG(F))))  &kp LS(LA(LC(LG(G))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(R))))  &kp LS(LC(LA(LG(L))))  &trans
+&trans  &kp LA(A)  &kp LA(O)              &kp LA(E)              &kp LA(U)              &kp LA(I)              &none   &trans  &trans      &trans  &trans  &none   &kp LS(LA(LC(LG(D))))  &kp LS(LC(LA(LG(H))))  &kp LS(LA(LG(LC(T))))  &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(S))))  &trans
+&trans  &trans     &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(X))))                  &trans      &trans                  &kp LS(LA(LC(LG(B))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(V))))  &kp LG(LC(LA(LS(Z))))  &trans
+&trans  &trans     &trans                 &trans                 &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &trans                 &trans                 &trans                 &trans                 &trans
+            >;
+        };
+
         extra1 {
             display-name = "Red";
             status = "reserved";
@@ -97,17 +108,6 @@
         extra4 {
             display-name = "Yellow";
             status = "reserved";
-        };
-
-        hyp {
-            display-name = "Hyper";
-            bindings = <
-&kp F1  &kp F2     &kp F3                 &kp F4                 &kp F5                 &kp F6                 &tog 1                                      &mo 3   &kp F7                 &kp F8                 &kp F9                 &kp F10                &kp F11                &kp F12
-&trans  &trans     &trans                 &trans                 &kp LS(LA(LC(LG(P))))  &kp LS(LA(LC(LG(Y))))  &none                                       &none   &kp LS(LC(LA(LG(F))))  &kp LS(LA(LC(LG(G))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(R))))  &kp LS(LC(LA(LG(L))))  &trans
-&trans  &kp LA(A)  &kp LA(O)              &kp LA(E)              &kp LA(U)              &kp LA(I)              &none   &trans  &trans      &trans  &trans  &none   &kp LS(LA(LC(LG(D))))  &kp LS(LC(LA(LG(H))))  &kp LS(LA(LG(LC(T))))  &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(S))))  &trans
-&trans  &trans     &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(X))))                  &trans      &trans                  &kp LS(LA(LC(LG(B))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(V))))  &kp LG(LC(LA(LS(Z))))  &trans
-&trans  &trans     &trans                 &trans                 &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &trans                 &trans                 &trans                 &trans                 &trans
-            >;
         };
     };
 };
