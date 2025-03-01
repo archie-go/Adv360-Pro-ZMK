@@ -27,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL    &kp N1         &kp N2      &kp N3       &kp N4      &kp N5  &tog 1                                                     &mo 3        &kp N6  &kp N7      &kp N8       &kp N9      &kp N0       &kp ASTRK
-&kp BSLH     &kp SQT        &kp COMMA   &kp PERIOD   &kp P       &kp Y   &none                                                      &none        &kp F   &kp G       &kp C        &kp R       &kp L        &kp FSLH
-&lt 6 TAB    &hm LCTRL A    &hm LALT O  &hm LSHFT E  &hm LGUI U  &kp I   &none       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none        &kp D   &hm RGUI H  &hm RSHFT T  &hm RALT N  &hm RCTRL S  &lt 6 MINUS
-&lt 6 GRAVE  &kp SEMICOLON  &kp Q       &kp J        &kp K       &kp X                          &kp HOME      &kp PG_UP                          &kp B   &kp M       &kp W        &kp V       &kp Z        &lt 6 EQUAL
-&mo 2        &kp GRAVE      &kp CAPS    &kp LEFT     &kp RIGHT           &lt 4 BSPC  &kp ESC    &kp END       &kp PG_DN  &kp ENTER  &lt 5 SPACE          &kp UP      &kp DOWN     &kp LBKT    &kp RBKT     &mo 2
+&kp EQUAL    &kp N1         &kp N2      &kp N3        &kp N4      &kp N5  &tog 1                                                     &mo 3        &kp N6  &kp N7      &kp N8       &kp N9      &kp N0       &kp ASTRK
+&kp BSLH     &kp SQT        &kp COMMA   &lt 6 PERIOD  &kp P       &kp Y   &none                                                      &none        &kp F   &kp G       &kp C        &kp R       &kp L        &kp FSLH
+&lt 7 TAB    &hm LCTRL A    &hm LALT O  &hm LSHFT E   &hm LGUI U  &kp I   &none       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none        &kp D   &hm RGUI H  &hm RSHFT T  &hm RALT N  &hm RCTRL S  &lt 7 MINUS
+&lt 7 GRAVE  &kp SEMICOLON  &kp Q       &kp J         &kp K       &kp X                          &kp HOME      &kp PG_UP                          &kp B   &kp M       &kp W        &kp V       &kp Z        &lt 7 EQUAL
+&mo 2        &kp GRAVE      &kp CAPS    &kp LEFT      &kp RIGHT           &lt 4 BSPC  &kp ESC    &kp END       &kp PG_DN  &kp ENTER  &lt 5 SPACE          &kp UP      &kp DOWN     &kp LBKT    &kp RBKT     &mo 2
             >;
         };
 
@@ -90,6 +90,17 @@
             >;
         };
 
+        num {
+            display-name = "Num";
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7         &kp F8      &kp F9  &kp F10  &kp F11          &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &kp LS(GRAVE)  &kp N7      &kp N8  &kp N9   &kp KP_MULTIPLY  &kp KP_DIVIDE
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &kp PERIOD     &kp N4      &kp N5  &kp N6   &kp KP_PLUS      &kp KP_MINUS
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp COMMA      &kp N1      &kp N2  &kp N3   &kp PERCENT      &kp KP_EQUAL
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp N0                 &kp DOLLAR  &trans  &trans   &trans           &trans
+            >;
+        };
+
         sym {
             display-name = "Sym";
             bindings = <
@@ -119,17 +130,6 @@
         extra4 {
             display-name = "Yellow";
             status = "reserved";
-        };
-
-        num {
-            display-name = "Num";
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7         &kp F8      &kp F9  &kp F10  &kp F11          &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &kp LS(GRAVE)  &kp N7      &kp N8  &kp N9   &kp KP_MULTIPLY  &kp KP_DIVIDE
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &kp PERIOD     &kp N4      &kp N5  &kp N6   &kp KP_PLUS      &kp KP_MINUS
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp COMMA      &kp N1      &kp N2  &kp N3   &kp PERCENT      &kp KP_EQUAL
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp N0                 &kp DOLLAR  &trans  &trans   &trans           &trans
-            >;
         };
     };
 };
