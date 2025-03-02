@@ -27,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL    &kp N1         &kp N2      &kp N3        &kp N4      &kp N5  &tog 1                                                     &mo 3        &kp N6  &kp N7      &kp N8       &kp N9      &kp N0       &kp ASTRK
-&kp BSLH     &kp SQT        &kp COMMA   &lt 6 PERIOD  &kp P       &kp Y   &none                                                      &none        &kp F   &kp G       &kp C        &kp R       &kp L        &kp FSLH
-&lt 7 TAB    &hm LCTRL A    &hm LALT O  &hm LSHFT E   &hm LGUI U  &kp I   &none       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none        &kp D   &hm RGUI H  &hm RSHFT T  &hm RALT N  &hm RCTRL S  &lt 7 MINUS
-&lt 7 GRAVE  &kp SEMICOLON  &kp Q       &kp J         &kp K       &kp X                          &kp HOME      &kp PG_UP                          &kp B   &kp M       &kp W        &kp V       &kp Z        &lt 7 EQUAL
-&mo 2        &kp GRAVE      &caps_word  &kp LEFT      &kp RIGHT           &lt 4 BSPC  &kp ESC    &kp END       &kp PG_DN  &kp ENTER  &lt 5 SPACE          &kp UP      &kp DOWN     &kp LBKT    &kp RBKT     &mo 2
+&kp EQUAL    &kp N1         &kp N2      &kp N3        &kp N4      &kp N5  &tog 1                                                           &mo 3        &kp N6  &kp N7      &kp N8       &kp N9      &kp N0       &kp ASTRK
+&kp BSLH     &kp SQT        &kp COMMA   &lt 6 PERIOD  &kp P       &kp Y   &none                                                            &none        &kp F   &kp G       &kp C        &kp R       &kp L        &kp FSLH
+&lt 7 TAB    &hm LCTRL A    &hm LALT O  &hm LSHFT E   &hm LGUI U  &kp I   &none       &bt BT_SEL 4  &kp LALT      &kp LGUI   &bt BT_SEL 3  &none        &kp D   &hm RGUI H  &hm RSHFT T  &hm RALT N  &hm RCTRL S  &lt 7 MINUS
+&lt 7 GRAVE  &kp SEMICOLON  &kp Q       &kp J         &kp K       &kp X                             &kp HOME      &kp PG_UP                             &kp B   &kp M       &kp W        &kp V       &kp Z        &lt 7 EQUAL
+&mo 2        &kp GRAVE      &caps_word  &kp LEFT      &kp RIGHT           &lt 4 BSPC  &kp ESC       &kp END       &kp PG_DN  &kp ENTER     &lt 5 SPACE          &kp UP      &kp DOWN     &kp LBKT    &kp RBKT     &mo 2
             >;
         };
 
